@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация HSE Список Документов</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/HSE_documentation_list.css">
+</head>
+<body>
+      <!-- NAVIGATION -->
+      <header class="header">
+        <img src="./assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="header-search-field" id="#" class="header__search-field">
+            <a href="#"><img src="./assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="#"><img src="./assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="./assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="./assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="#"><img src="./assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="#" class="inner-nav__link inner-nav__link_active">Организационная структура</a>
+        <a href="#" class="inner-nav__link">Документация HSE</a>
+        <a href="#" class="inner-nav__link">Документация по промышленной безопасности</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>    
+    <div class="doc-list-container">
+        <div class="doc-filter">
+            <div class="doc-filter__row">
+                <select name="folders-filter" id="#" class="doc-filter__filters">
+                    <option value="All">Все</option>
+                    <option value="folder-1">Реестр законодательных актов</option>
+                    <option value="folder-2">Приказы</option>
+                    <option value="filter-3">ИБОТ</option>
+                    <option value="filter-4">Внутренние регламентирующие документы</option>
+                    <option value="filter-5">Производственные инструкции по эксплуатации</option>
+                    <option value="filter-6">Обязательные страховые полюсы</option>
+                </select>
+                <select name="date-filter" id="" class="doc-filter__filters">
+                    <option value="oldest-first">Сначала старые</option>
+                    <option value="latest-first">Сначала новые</option>
+                </select>
+                <input type="search" name="doc-search" id="#" class="doc-filter__search">
+                <button class="doc-filter__add">Добавить</button>
+            </div>
+        </div>
+        <table class="doc-table">
+            <tr class="doc-table__row doc-table__row_titles">
+                <td>Имя</td>
+                <td>Название документа</td>
+                <td>Код документа</td>
+                <td>Номер и дата протокола утверждения</td>
+                <td>Ответственный департамент</td>
+                <td>Срок пересмотра</td>
+                <td>ФИО исполнителя</td>
+            </tr>
+            <tr class="doc-table__row">
+                <td>D0001</td>
+                <td>Производственная инструкция по эксплуатации</td>
+                <td>D12345</td>
+                <td>D0001 от 21.06.2022</td>
+                <td>Департамент ПБ, ОТ, Э и ИСО</td>
+                <td>6 месяцев</td>
+                <td>Cameron Jennings</td>
+            </tr>
+            <tr class="doc-table__row">
+                <td>D0001</td>
+                <td>Производственная инструкция по эксплуатации</td>
+                <td>D12345</td>
+                <td>D0001 от 21.06.2022</td>
+                <td>Департамент ПБ, ОТ, Э и ИСО</td>
+                <td>6 месяцев</td>
+                <td>Cameron Jennings</td>
+            </tr>
+            <tr class="doc-table__row">
+                <td>D0001</td>
+                <td>Производственная инструкция по эксплуатации</td>
+                <td>D12345</td>
+                <td>D0001 от 21.06.2022</td>
+                <td>Департамент ПБ, ОТ, Э и ИСО</td>
+                <td>6 месяцев</td>
+                <td>Cameron Jennings</td>
+            </tr>
+            <tr class="doc-table__row">
+                <td>D0001</td>
+                <td>Производственная инструкция по эксплуатации</td>
+                <td>D12345</td>
+                <td>D0001 от 21.06.2022</td>
+                <td>Департамент ПБ, ОТ, Э и ИСО</td>
+                <td>6 месяцев</td>
+                <td>Cameron Jennings</td>
+            </tr>
+            <tr class="doc-table__row">
+                <td>D0001</td>
+                <td>Производственная инструкция по эксплуатации</td>
+                <td>D12345</td>
+                <td>D0001 от 21.06.2022</td>
+                <td>Департамент ПБ, ОТ, Э и ИСО</td>
+                <td>6 месяцев</td>
+                <td>Cameron Jennings</td>
+            </tr>
+            <tr class="doc-table__row">
+                <td>D0001</td>
+                <td>Производственная инструкция по эксплуатации</td>
+                <td>D12345</td>
+                <td>D0001 от 21.06.2022</td>
+                <td>Департамент ПБ, ОТ, Э и ИСО</td>
+                <td>6 месяцев</td>
+                <td>Cameron Jennings</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
