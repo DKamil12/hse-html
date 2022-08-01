@@ -1,0 +1,51 @@
+@import url(./style.css);
+
+/* VISIBLE WINDOW */
+body {
+    background-image: url(../images/home-background.png);
+    background-size: cover;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* VISIBLE WINDOW */
+
+
+/* HSE LOGO */
+.hse-logo-container {
+    display: flex;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 78px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.red {
+    color: #E31E24;
+}
+
+.blue {
+    color: #3273AE;
+}
+
+.light-blue {
+    color: #19B7DA;
+}
+
+.hse-full {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #767C82;
+}
+
+.home__img {
+    margin-top: 45px;
+    width: 319px;
+    height: 295px;
+}
+/* HSE LOGO */
+

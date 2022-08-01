@@ -1,6 +1,9 @@
+@import url(./style.css);
+
 /* ORGANIZATION STRUCTURE TABLE*/
 .org-structure-container {
-    margin: 175px 0 0 100px;
+    margin: 115px 0 0 100px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     color: #606060;
@@ -8,7 +11,7 @@
 
 .org-structure {
     width: 328px;
-    height: 750px;
+    height: 550px;
     background: #FDFDFD;
     border: 1px solid #C8C8C8;
     border-right: none;

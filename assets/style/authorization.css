@@ -1,3 +1,5 @@
+@import url(./style.css);
+
 /* BACKGROUND IMAGE */
 body {
     background-image: url(../images/authorization-page-img.png);

@@ -1,10 +1,6 @@
-.create-doc-container {
-    margin: 175px 0 0 100px;
-    width: calc(100vw - 100px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+@import url(./style.css);
+@import url(./form_style.css);
 
 /* TITLE */
 .create-doc__title {
@@ -33,30 +29,12 @@
     gap: 20px;
 }
 
-.create-doc__field {
-    display: flex;
+.form__field-content_protocol-number {
+    width: 100px;
 }
 
-.create-doc__field-title {
-    width: 185px;
-    height: fit-content, inherit;
-    padding: 11px;
-    background: #F1F1F1;
-    border: 1px solid #C8C8C8;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-}
-
-.create-doc__field-content {
-    width: 340px;
-    height: inherit;
-    border-width: 1px 1px 1px 0px;
-    border-style: solid;
-    border-color: #C8C8C8;
-    padding: 0 15px;
+.form__field-content_protocol-date {
+    width: 240px;
 }
 /* GENERAL FORM FIELDS STYLE */
 
@@ -144,20 +122,36 @@
   }
 /* CHECKBOXES */
 
+
 /* ADDITION BUTTON */
+.create-doc__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 34px;
+}
+
+.create-doc__button-text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+}
+
 .create-doc__button {
     width: 160px;
     height: 35px;
     background-color: #BB3232;
     color: white;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 15px;
     padding: 10px 15px;
-    align-self: flex-end;
 }
 
 .create-doc__button:hover {
     background-color: #b71908;
+}
+.create-doc__cancel-button {
+    color: #3273AE;
+
 }
 /* ADDITION BUTTON */

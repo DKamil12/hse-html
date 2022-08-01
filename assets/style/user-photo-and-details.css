@@ -1,0 +1,69 @@
+.user-page__content {
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.user-page__img {
+    width: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-page__details {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    gap: 50px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #F1F1F1;
+    padding: 42px 60px;
+}
+
+.textline-button {
+    font-weight: 600;
+    color: #3273AE;
+    width: 117px;
+}
+
+.textline-button:hover {
+    color: #034380;
+}
+
+.cancel-save-buttons {
+    align-self: flex-end;
+    height: 35px;
+    margin-top: 34px;
+}
+
+.button-text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.cancel-button {
+    color: #666666;
+    margin-right: 25px;
+}
+
+.cancel-button:hover {
+    color: #4b4b4b;
+}
+
+.save-button {
+    background-color: #BB3232;
+    color: white;
+    padding: 10px 15px;
+}
+
+.save-button:hover {
+    background-color: #b71908;
+}
+

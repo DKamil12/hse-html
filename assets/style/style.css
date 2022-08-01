@@ -50,12 +50,13 @@ table {
 
 .header__search-and-logout {
     display: inherit;
+    align-items: center;
+    gap: 15px;
 }
 
 .header__search-field {
     width: 260px;
     height: 35px; 
-    margin-right: 30px;
     background-image: url(../images/header-search-icon.svg);
     background-repeat: no-repeat;
     background-position: 232px 8px;
@@ -98,8 +99,7 @@ table {
     background: #F5F5F5;
     border-bottom: 1px solid #D1D1D1;
     padding-top: 14px;
-    padding-left: 250px;
-    /* white-space: nowrap; */
+    padding-left: 150px;
 }
 
 .inner-nav__link {
@@ -107,7 +107,11 @@ table {
     font-size: 14px;
     line-height: 16px;
     color: #7D7D7D;
-    margin-right: 105px;
+    margin-right: 70px;
+}
+
+.inner-nav__link:hover {
+    color: #3273AE;
 }
 
 .inner-nav__link_active {
@@ -116,4 +120,15 @@ table {
 }
 /* INNER-NAVIGATION */
 
+/* CONTAINER */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    padding-top: 60px;
+    margin-left: 100px;
+}
+/* CONTAINER */
 

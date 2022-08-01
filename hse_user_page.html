@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/hse_user_page.css">
+    <title>User Page</title>
+    <!-- PHONE NUMBER MASK SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+</head>
+<body>
+     <!-- NAVIGATION -->
+     <header class="header">
+        <img src="./assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="headerSearch" id="headerSearch" class="header__search-field">
+            <a href="#"><img src="./assets/images/header-user-icon.svg" alt="user-page"></a>
+            <a href="#"><img src="./assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="#"><img src="./assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="./assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="./assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="#"><img src="./assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="#" class="inner-nav__link inner-nav__link_active">Информация о пользователе</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>
+    <div class="container">
+        <!-- USER IMAGE -->
+        <form action="" class="user-page__content">
+            <div class="user-page__img">
+                <img src="./assets/images/user-page-img.png" alt="user-photo" class="user-img">
+                <button class="textline-button">Загрузить фото</button>
+            </div>
+            <!-- USER DETAILS -->
+            <div class="user-page__details">
+                <div class="details__col">
+                    <!-- USERNAME -->
+                    <label for="username">Имя пользователя</label>
+                    <input type="text" name="username" id="username" class="user-page__field" placeholder="Введите ФИО">
+                    <!-- USER POSITION -->
+                    <label for="position">Должность</label>
+                    <input type="text" name="position" id="position" class="user-page__field" placeholder="Введите название должности">
+                    <!-- USER EMAIL -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="user-page__field" placeholder="Username@mail.com">
+                </div>
+                <div class="details__col">
+                    <!-- USER DEPARTMENT -->
+                    <label for="department">Департамент</label>
+                    <select name="department" id="department" class="user-page__field">
+                        <option value="safety-dep">Департамент безопасности</option>
+                        <option value="hr-dep">Департамент HR</option>
+                        <option value="iso-dep">Департамент ПБ, ОТ, Э и ИСО</option>
+                    </select>
+                    <!-- USER PHONE -->
+                    <script src="js/jquery.maskedinput.min.js"></script>
+                    <label for="tel-number">Номер телефона</label>
+                    <input type="tel" name="telNumber" id="telNumber" class="user-page__field user-page__tel" placeholder="+7(999)999-99-99">
+                    <script>
+                        $(".user-page__tel").mask("+7(999)999-99-99");
+                    </script>
+                    <!-- CHANGE PASSWORD -->
+                    <button class="textline-button">Изменить пароль</button>
+                    <!-- CANCEL-SAVE BUTTONS -->
+                    <div class="cancel-save-buttons">
+                        <button class="cancel-button button-text">Отменить</button>
+                        <button class="save-button button-text">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

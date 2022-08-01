@@ -1,11 +1,27 @@
-.container {
-    margin: 175px 0 0 100px;
+@import url(./style.css);
+
+/* VISIBLE WINDOW */
+.content {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
 }
 
+@media screen and (max-width: 1388px) {
+    .content {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1388px) and (max-width: 1920px) {
+    .content {
+        width: 1230px;
+    }
+}
+/* VISIBLE WINDOW */
+
+
+/* DOCUMENT FOLDERS */
 .doc-folder {
     width: 370px;
     height: 100px;
@@ -28,4 +44,4 @@
     color: #7D7D7D;
     cursor: pointer;
 }
-
+/* DOCUMENT FOLDERS */

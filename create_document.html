@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="./assets/style/create_doc_form_style.css">
+    <link rel="stylesheet" href="./assets/style/create_document.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,6 +13,7 @@
         <img src="./assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
         <div class="header__search-and-logout">
             <input type="search" name="header-search-field" id="#" class="header__search-field">
+            <a href="#"><img src="./assets/images/header-user-icon.svg" alt="user-page"></a>
             <a href="#"><img src="./assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
         </div>
     </header>
@@ -34,39 +34,40 @@
     </nav>
     <!-- NAVIGATION -->
     <div>.</div>
-    <div class="create-doc-container">
+    <div class="container">
         <p class="create-doc__title">Создать документ</p>
         <form action="" class="create-doc__form">
             <div class="create-doc__row">
                 <!-- FILE NAME -->
-                <div class="create-doc__field">
-                    <div class="create-doc__field-title">Имя файла</div>
-                    <input type="text" name="file-name" id="file-name" class="create-doc__field-content">
+                <div class="form__field">
+                    <div class="form__field-title">Имя файла</div>
+                    <input type="text" name="fileName" id="fileName" class="form__field-content">
                 </div>
                 <!-- DOCUMENT NAME -->
-                <div class="create-doc__field">
-                    <div class="create-doc__field-title">Название документа</div>
-                    <input type="text" name="file-name" id="file-name" class="create-doc__field-content">
+                <div class="form__field">
+                    <div class="form__field-title">Название документа</div>
+                    <input type="text" name="docName" id="docName" class="form__field-content">
                 </div>
             </div>
             <div class="create-doc__row">
                 <!-- DATE OF APPROVAL -->
-                <div class="create-doc__field">
-                    <div class="create-doc__field-title">Номер и дата протокола 
+                <div class="form__field">
+                    <div class="form__field-title">Номер и дата протокола 
                         утверждения</div>
-                    <input type="date" name="file-name" id="file-name" class="create-doc__field-content">
+                        <input type="text" name="protocolNumber" id="protocolNumber" class="form__field-content form__field-content_protocol-number">
+                    <input type="date" name="protocolDate" id="protocolDate" class="form__field-content form__field-content_protocol-date">
                 </div>
                 <!-- NAME OF EXECUTOR -->
-                <div class="create-doc__field">
-                    <div class="create-doc__field-title">ФИО Исполнителя </div>
-                    <input type="text" name="file-name" id="file-name" class="create-doc__field-content">
+                <div class="form__field">
+                    <div class="form__field-title">ФИО Исполнителя </div>
+                    <input type="text" name="executorName" id="executorName" class="form__field-content">
                 </div>
             </div>
             <div class="create-doc__row">
                 <!-- RESPONSIBLE DEPARTMENT -->
-                <div class="create-doc__field">
-                    <div class="create-doc__field-title">Ответственный департамент</div>
-                    <select name="responsible-department" id="" class="create-doc__field-content">
+                <div class="form__field">
+                    <div class="form__field-title">Ответственный департамент</div>
+                    <select name="responsibleDepartment" id="responsibleDepartment" class="form__field-content">
                         <option value="security-dep">Департамент безопасности</option>
                         <option value="hr-dep">Департамент HR</option>
                         <option value="iso-dep">Департамент ПБ, ОТ, Э и ИСО</option>
@@ -74,9 +75,9 @@
                     </select>
                 </div>    
                 <!-- REVISION TIME -->
-                <div class="create-doc__field">
-                    <div class="create-doc__field-title">Срок пересмотра</div>
-                    <select name="revision-time" id="" class="create-doc__field-content">
+                <div class="form__field">
+                    <div class="form__field-title">Срок пересмотра</div>
+                    <select name="revisionTime" id="revisionTime" class="form__field-content">
                         <option value="3-months">3 месяца</option>
                         <option value="6-months">6 месяцев</option>
                         <option value="1-year">1 год</option>
@@ -85,22 +86,22 @@
                 </div>
             </div>
             <!-- DOCUMENT UPLOADING -->
-            <div class="create-doc__field">
-                <div class="create-doc__field-title">Загрузка документа</div>
-                <div class="create-doc__upload-file create-doc__field-content">
-                    <label for="upload-file" class="create-doc__label">
+            <div class="form__field">
+                <div class="form__field-title">Загрузка документа</div>
+                <div class="create-doc__upload-file form__field-content">
+                    <label for="uploadFile" class="create-doc__label">
                         <img src="./assets/images/upload-icon.svg" alt="">
                         <span>Нажмите или перетащите файл для загрузки</span>
                     </label>
-                    <input type="file" name="upload-file" id="" class="input-hidden">
+                    <input type="file" name="uploadFile" id="uploadFile" class="input-hidden">
                 </div>
             </div>
             <!-- CHECKBOXES -->
             <div class="create-doc__row">
                  <!-- READ ACCESS -->
-                 <div class="create-doc__field">
-                    <div class="create-doc__field-title">Доступ к чтению</div>
-                    <select name="read-access" id="read-access" class="create-doc__field-content">
+                 <div class="form__field">
+                    <div class="form__field-title">Доступ к чтению</div>
+                    <select name="readAccess" id="readAccess" class="form__field-content">
                         <option value="security-dep">Департамент безопасности</option>
                         <option value="hr-dep">Департамент HR</option>
                         <option value="iso-dep">Департамент ПБ, ОТ, Э и ИСО</option>
@@ -110,13 +111,13 @@
                 <div class="create-doc__checkbox-container">
                     <!-- ONE-CLICK READ -->
                     <div class="create-doc__checkbox">
-                        <input type="checkbox" name="one-click-read" id="one-click-read" class="checkbox">
-                        <label for="one-click-read">Чтение в один клик</label>
+                        <input type="checkbox" name="oneClickRead" id="oneClickRead" class="checkbox">
+                        <label for="oneClickRead">Чтение в один клик</label>
                     </div>
                     <!-- UNLIMITED ARCHIVATION -->
                     <div class="create-doc__checkbox">
-                        <input type="checkbox" name="unlimitted-archivation" id="unlimitted-archivation" class="checkbox">
-                        <label for="unlimitted-archivation">Не ограниченный объем документов для архивации</label>
+                        <input type="checkbox" name="unlimittedArchivation" id="unlimittedArchivation" class="checkbox">
+                        <label for="unlimittedArchivation">Не ограниченный объем документов для архивации</label>
                     </div>
                     <!-- BACKUP -->
                     <div class="create-doc__checkbox">
@@ -126,7 +127,10 @@
                 </div>
             </div>
             <!-- ADDITION BUTTON -->
-            <button type="submit" class="create-doc__button">Добавить документ</button>
+            <div class="create-doc__buttons">
+                <a href="#" class="create-doc__cancel-button create-doc__button-text">Отменить</a>
+                <button type="submit" class="create-doc__button create-doc__button-text">Сохранить</button>
+            </div>
         </form>
     </div>
 </body>
