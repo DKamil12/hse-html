@@ -21,11 +21,6 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-
-.org-structure:last-child {
-    border-right: 1px solid #C8C8C8;
-    width: 490px;
-}
 /* ORGANIZATION STRUCTURE TABLE*/
 
 
@@ -100,6 +95,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
+    border-right: 1px solid #C8C8C8;
+    width: 490px;
 }
 
 .employee-details__img {
@@ -131,8 +128,3 @@
 }
 /* EMPLOYEE DETAILS */
 
-/* MODAL WINDOW */
-.modal-window {
-    width: 300px;
-}
-/* MODAL WINDOW */
