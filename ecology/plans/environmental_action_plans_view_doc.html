@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style/create_document.css">
+    <title>Планы природоохранных мероприятий - Просмотр документа</title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <img src="../../assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="headerSearch" id="headerSearch" class="header__search-field">
+            <a href="#"><img src="../../assets/images/header-user-icon.svg" alt="user-page"></a>
+            <a href="#"><img src="../../assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="#"><img src="../../assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="../../assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="../../assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="#"><img src="../../assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="../waste/folders.html" class="inner-nav__link">Отходы</a>
+        <a href="./folders.html" class="inner-nav__link inner-nav__link_active">Планы</a>
+        <a href="../emission_projects/folders.html" class="inner-nav__link">Проекты эмиссии</a>
+        <a href="../ovos_projects/folders.html" class="inner-nav__link">Проекты ОВОС</a>
+        <a href="../environmental_control_programs/environmental_control_programs(ppek)_doc_list.html" class="inner-nav__link">Программы производственного экологического контроля ОВОС</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>
+    <div class="container">
+        <p class="create-doc__title">Просмотр документа</p>
+        <form action="./environmental_action_plans_edit_doc.html" class="create-doc__form">
+            <div class="create-doc__row">
+                <!-- FILE NAME -->
+                <div class="form__field">
+                    <div class="form__field-title">Имя файла</div>
+                    <input type="text" name="fileName" id="fileName" class="form__field-content" value="D0001" readonly>
+                </div>
+                <!-- DOCUMENT NAME -->
+                <div class="form__field">
+                    <div class="form__field-title">Наименование документа</div>
+                    <input type="text" name="docName" id="docName" class="form__field-content" value="Производственная инструкция по эксплуатации" readonly>
+                </div>
+            </div>
+            <div class="create-doc__row">
+                <!-- DATE OF APPROVAL -->
+                <div class="form__field">
+                    <div class="form__field-title">Номер и дата утверждения файла</div>
+                        <input type="text" name="protocolNumber" id="protocolNumber" class="form__field-content form__field-content_protocol-number" readonly>
+                        <input type="date" name="protocolDate" id="protocolDate" class="form__field-content form__field-content_protocol-date" readonly>
+                </div>
+                <!-- VALIDITY -->
+                <div class="form__field">
+                    <div class="form__field-title">Срок действия</div>
+                    <input type="date" name="startDate" id="startDate" class="form__field-validity" readonly>
+                    <input type="date" name="endDate" id="endDate" class="form__field-validity" readonly>
+                </div>
+            </div>
+            <!-- EXECUTIVE ORGANIZATION -->
+            <div class="form__field">
+                <div class="form__field-title">Исполнительная организация</div>
+                <input type="text" name="executiveOrganization" id="executiveOrganization" class="form__field-content form__field-content_long" readonly>
+            </div>
+            <!-- DOCUMENT UPLOADING -->
+            <div class="form__field">
+                <div class="form__field-title">Загрузка документа</div>
+                <div class="create-doc__upload-file form__field-content form__field-content_long">
+                    <label for="uploadFile" class="create-doc__label">
+                        <img src="../../assets/images/upload-icon.svg" alt="">
+                        <span>Нажмите или перетащите файл для загрузки</span>
+                    </label>
+                    <input type="file" name="uploadFile" id="uploadFile" class="input-hidden">
+                </div>
+            </div>
+            <!-- COMMENT -->
+            <textarea name="comment" id="comment" class="form__comment form__field-content" placeholder="Комментарий" readonly></textarea>
+            <!-- ADDITION BUTTON -->
+            <div class="create-doc__buttons">
+                <a href="./environmental_action_plans_doc_list.html" class="create-doc__cancel-button create-doc__button-text">Отменить</a>
+                <button type="submit" class="create-doc__button create-doc__button-text">Редактировать</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

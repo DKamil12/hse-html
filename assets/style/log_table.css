@@ -1,0 +1,21 @@
+.log-table {
+    margin-top: 54px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    width: 1070px;
+    border: 1px solid #C8C8C8;
+}
+
+.log-table th, td {
+    width: fit-content;
+    padding: 12px;
+    border: 1px solid #C8C8C8;
+    height: 40px;
+    text-align: left;
+    width: 384px;
+}
+
+.log-table__title {
+    background-color: #F1F1F1;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style/hse_documentation_list.css">
+    <title>Заключения экологической экспертизы - Список документов</title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <img src="../../assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="headerSearch" id="headerSearch" class="header__search-field">
+            <a href="#"><img src="../../assets/images/header-user-icon.svg" alt="user-page"></a>
+            <a href="#"><img src="../../assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="#"><img src="../../assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="../../assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="../../assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="#"><img src="../../assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="../waste/folders.html" class="inner-nav__link">Отходы</a>
+        <a href="../plans/folders.html" class="inner-nav__link">Планы</a>
+        <a href="../emission_projects/folders.html" class="inner-nav__link">Проекты эмиссии</a>
+        <a href="./folders.html" class="inner-nav__link inner-nav__link_active">Проекты ОВОС</a>
+        <a href="../environmental_control_programs/environmental_control_programs(ppek)_doc_list.html" class="inner-nav__link">Программы производственного экологического контроля ОВОС</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>    
+    <div class="doc-list-container">
+        <div class="doc-list__content">
+            <!-- HEAD PANEL -->
+            <div class="doc-list__head-panel">
+                <!-- BUTTONS -->
+                <div class="doc-list__buttons">
+                    <a  href="./folders.html" class="go-back-button button-general nohover">Назад</a>
+                    <form action="./ecological_expertise_conclusion_create_doc.html"><button class="create-doc-button button-general">Создать документ</button></form>
+                </div>
+                <!-- SEARCH AND FILTER -->
+                <div class="doc-list__search-row">
+                    <img src="../../assets/images/doc-lict-filter.png" alt="filter" class="doc-list__filter" onclick="openFilter()">
+                    <!-- FILTER POPUP -->
+                    <div class="filter-popup" id="filter">
+                        <p class="filter-title">Фильтр</p>
+                        <form action="" class="filter-form">
+                            <div class="form__field">
+                                <label for="filterDate" class="form__field-title">Дата</label>
+                                <input type="date" name="filterDate" id="filterDate" class="form__field-content">
+                            </div class="form__field">
+                            <div class="form__field">
+                                <label for="responsibleDepartment" class="form__field-title">Ответственный департамент</label>
+                                <select name="responsibleDepartment" id="responsibleDep" class="form__field-content">
+                                    <option value="security-dep">Департамент безопасности</option>
+                                    <option value="hr-dep">Департамент HR</option>
+                                    <option value="iso-dep">Департамент ПБ, ОТ, Э и ИСО</option>
+                                    <option value="inner-control-dep">Служба внутреннего контроля</option>
+                                </select>
+                            </div>
+                            <div class="form__field">
+                                <label for="revisionTime" class="form__field-title">Срок пересмотра</label>
+                                <select name="revisionTime" id="revisionTime" class="form__field-content">
+                                    <option value="3-months">3 месяца</option>
+                                    <option value="6-months">6 месяцев</option>
+                                    <option value="1-year">1 год</option>
+                                    <option value="3years">3 года</option>
+                                </select>
+                            </div>
+                            <div class="form__field">
+                                <label for="" class="form__field-title">ФИО исполнителя</label>
+                                <input type="text" name="employeeName" id="employeeName" class="form__field-content">
+                            </div>
+                            <button type="submit" class="filter-button">Применить</button>
+                        </form>    
+                    </div>
+                    <!-- SEARCH FIELD -->
+                    <input type="search" name="doc-search" id="#" class="doc-filter__search" placeholder="Поиск по ключевым словам">
+                    </div>
+                </div>
+                <!-- POPUP SCRIPT -->
+                <script>
+                    function openFilter() {
+                        var popup = document.getElementById("filter");
+                        popup.classList.toggle("show");
+                        // alert('test');
+                    }
+                </script>
+            </div>
+            <!-- DOCUMENTS TABLE -->
+            <table class="doc-table">
+                <tr class="doc-table__row doc-table__row_titles">
+                    <td>Имя файла</td>
+                    <td>Наименование документа</td>
+                    <td>Номер и дата утверждения</td>
+                    <td>Срок действия</td>
+                    <td>Исполнительная организация</td>
+                    <td>Номер документа заключения</td>
+                    <td>Дата выдачи заключения</td>
+                    <td>Орган выдачи</td>
+                </tr>
+                <tr class="doc-table__row" onclick="document.location='./ecological_expertise_conclusion_view_doc.html'">
+                    <td>D0001</td>
+                    <td>Заключение экологической экспертизы</td>
+                    <td>D0001 01.08.2022 г.</td>
+                    <td>01.08.2022 г. - 02.08.2022 г.</td>
+                    <td>Executive Organization LLC</td>
+                    <td>0123456</td>
+                    <td>01.08.2022 г.</td>
+                    <td>Департамент экологии Алматинской области (АО)</td>
+
+                </tr>
+                <tr class="doc-table__row" onclick="document.location='./ecological_expertise_conclusion_view_doc.html'">
+                    <td>D0001</td>
+                    <td>Заключение экологической экспертизы</td>
+                    <td>D0001 01.08.2022 г.</td>
+                    <td>01.08.2022 г. - 02.08.2022 г.</td>
+                    <td>Executive Organization LLC</td>
+                    <td>0123456</td>
+                    <td>01.08.2022 г.</td>
+                    <td>Департамент экологии Алматинской области (АО)</td>
+                </tr>
+                <tr class="doc-table__row" onclick="document.location='./ecological_expertise_conclusion_view_doc.html'">
+                    <td>D0001</td>
+                    <td>Заключение экологической экспертизы</td>
+                    <td>D0001 01.08.2022 г.</td>
+                    <td>01.08.2022 г. - 02.08.2022 г.</td>
+                    <td>Executive Organization LLC</td>
+                    <td>0123456</td>
+                    <td>01.08.2022 г.</td>
+                    <td>Департамент экологии Алматинской области (АО)</td>
+                </tr>
+                <tr class="doc-table__row" onclick="document.location='./ecological_expertise_conclusion_view_doc.html'">
+                    <td>D0001</td>
+                    <td>Заключение экологической экспертизы</td>
+                    <td>D0001 01.08.2022 г.</td>
+                    <td>01.08.2022 г. - 02.08.2022 г.</td>
+                    <td>Executive Organization LLC</td>
+                    <td>0123456</td>
+                    <td>01.08.2022 г.</td>
+                    <td>Департамент экологии Алматинской области (АО)</td>
+                </tr>
+                <tr class="doc-table__row" onclick="document.location='./ecological_expertise_conclusion_view_doc.html'">
+                    <td>D0001</td>
+                    <td>Заключение экологической экспертизы</td>
+                    <td>D0001 01.08.2022 г.</td>
+                    <td>01.08.2022 г. - 02.08.2022 г.</td>
+                    <td>Executive Organization LLC</td>
+                    <td>0123456</td>
+                    <td>01.08.2022 г.</td>
+                    <td>Департамент экологии Алматинской области (АО)</td>
+                </tr>
+                <tr class="doc-table__row" onclick="document.location='./ecological_expertise_conclusion_view_doc.html'">
+                    <td>D0001</td>
+                    <td>Заключение экологической экспертизы</td>
+                    <td>D0001 01.08.2022 г.</td>
+                    <td>01.08.2022 г. - 02.08.2022 г.</td>
+                    <td>Executive Organization LLC</td>
+                    <td>0123456</td>
+                    <td>01.08.2022 г.</td>
+                    <td>Департамент экологии Алматинской области (АО)</td>
+                </tr>
+                
+            </table>
+        </div>    
+    </div>
+</body>
+</html>

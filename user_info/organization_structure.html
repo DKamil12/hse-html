@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Организационная стуктура HSE</title>
+    <link rel="stylesheet" href="../assets/style/organization_structure.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <img src="../../assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="headerSearch" id="headerSearch" class="header__search-field">
+            <a href="../../user_info/hse_user_page.html"><img src="../../assets/images/header-user-icon.svg" alt="user-page"></a>
+            <a href="#"><img src="../../assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="../../user_info/hse_home.html"><img src="../../assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="../../assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="../../assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="../../ecology/waste/folders.html"><img src="../../assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="./organization_structure.html" class="inner-nav__link inner-nav__link_active">Организационная структура</a>
+        <a href="./hse_documentation_folders.html" class="inner-nav__link">Документация HSE</a>
+        <a href="./industrial_safety_doc_folders.html" class="inner-nav__link">Документация по промышленной безопасности</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>
+    <!-- ORGANIZATION STRUCTURE TABLE -->
+    <div class="org-structure-container">
+        <!-- DEPARTMENT LIST  -->
+        <div class="org-structure department-list">
+            <input type="search" name="depListSearch" placeholder="keywords" id="depListSearch" class="department-list__search">
+            <details>
+                <summary class="department-list__departments">ТОО "Азиатский Газопровод"</summary>
+                <p class="department-list__departments">Генеральный директор</p>
+                <p class="department-list__departments">Первый заместитель генерального директора</p>
+                <p class="department-list__departments">Исполнительный директор по правовым вопросам</p>
+                <details>
+                    <summary class="department-list__departments">Группа советников</summary>
+                </details>
+                <details>
+                    <summary class="department-list__departments">Департамент безопасности</summary>
+                </details>
+                <details>
+                    <summary class="department-list__departments">Департамент управления человеческими ресурсами</summary>
+                </details>
+                <details>
+                    <summary class="department-list__departments">Департамент ПБ, ОТ, Э и ИСО</summary>
+                </details>
+                <details>
+                    <summary class="department-list__departments">Служба внутреннего контроля</summary>
+                </details>
+                <details>
+                    <summary class="department-list__departments">Департамент правового обеспечения</summary>
+                </details>
+            </details>
+        </div>
+        <!-- DEPARTMENT DETAILS -->
+        <div class="org-structure department-details">
+            <p class="department-details__department-name">Служба внутреннего контроля</p>
+            <div>
+                <a href="#" class="department-details__employee" id="employee1">
+                    <img src="../../assets/images/employee.svg" alt="employee-icon">
+                    <p>Stephanie Harrelson</p>
+                </a>
+                <a href="#" class="department-details__employee" id="employee2">
+                    <img src="../../assets/images/employee.svg" alt="employee-icon">
+                    <p>John Smith</p>
+                </a>
+                <a href="#" class="department-details__employee" id="employee3">
+                    <img src="../../assets/images/employee.svg" alt="employee-icon">
+                    <p>Cameron Jennings</p>
+                </a>
+                <a href="#" class="department-details__employee" id="employee4">
+                    <img src="../../assets/images/employee.svg" alt="employee-icon">
+                    <p>Rosemary Bramson</p>
+                </a>
+            </div>
+        </div>
+        <!-- EMPLOYEE DETAILS -->
+        <div class="org-structure employee-details">
+            <img src="../../assets/images/employee.svg" alt="employee-icon" class="employee-details__img">
+            <p class="employee-details__name">Cameron Jennings</p>
+            <div class="employee-details__contact-info">
+                <div class="employee-details__value">
+                    <p>Телефон</p>
+                    <p>Email</p>
+                    <p>Должность</p>
+                </div>
+                <div class="employee-details__value employee-details__value_darker">
+                    <p>8 777 766 5544</p>
+                    <p>CameronJ@gmail.com</p>
+                    <p>Сотрудник службы внутреннего контроля</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

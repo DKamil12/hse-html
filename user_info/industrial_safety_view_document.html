@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/create_document.css">
+    <title>Документация по промышленной безопасности - Просмотр документа</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <img src="../../assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="headerSearch" id="headerSearch" class="header__search-field">
+            <a href="../../user_info/hse_user_page.html"><img src="../../assets/images/header-user-icon.svg" alt="user-page"></a>
+            <a href="#"><img src="../../assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="../../user_info/hse_home.html"><img src="../../assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="../../assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="../../assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="../../ecology/waste/folders.html"><img src="../../assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="./organization_structure.html" class="inner-nav__link">Организационная структура</a>
+        <a href="./hse_documentation_folders.html" class="inner-nav__link">Документация HSE</a>
+        <a href="./industrial_safety_doc_folders.html" class="inner-nav__link inner-nav__link_active">Документация по промышленной безопасности</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>
+    <div class="container">
+        <p class="create-doc__title">Просмотр документа</p>
+        <form action="./industrial_safety_edit_document.html" class="create-doc__form">
+            <div class="create-doc__row">
+                <!-- FILE NAME -->
+                <div class="form__field">
+                    <div class="form__field-title">Имя файла</div>
+                    <input type="text" name="fileName" id="fileName" class="form__field-content form__field-content_long" value="Перечни работ повышенной опасности объектов выполняемых на компрессорных станциях" readonly>
+                </div>
+            </div>
+            <!-- DOCUMENT NUMBER -->
+            <div class="create-doc__row">
+                <div class="form__field">
+                    <div class="form__field-title">Номер документа</div>
+                    <input type="text" name="" id="" class="form__field-content" value="0005">
+                </div>
+                <!-- DOCUMENT NAME -->
+                <div class="form__field">
+                    <div class="form__field-title">Дата</div>
+                    <input type="date" name="docYear" id="docYear" class="form__field-content" value="2022-07-22">
+                </div>
+            </div>
+            <!-- DOCUMENT UPLOADING -->
+            <div class="form__field">
+                <div class="form__field-title">Загрузка документа</div>
+                <div class="create-doc__upload-file form__field-content form__field-content_long">
+                    <label for="uploadFile" class="create-doc__label">
+                        <img src="../../assets/images/upload-icon.svg" alt="">
+                        <span>Нажмите или перетащите файл для загрузки</span>
+                    </label>
+                    <input type="file" name="uploadFile" id="uploadFile" class="input-hidden">
+                </div>
+            </div>
+            <!-- ADDITION BUTTON -->
+            <div class="create-doc__buttons">
+                <a href="./industrial_safety_list.html" class="create-doc__cancel-button create-doc__button-text">Отменить</a>
+                <button type="submit" class="create-doc__button create-doc__button-text">Редактировать</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

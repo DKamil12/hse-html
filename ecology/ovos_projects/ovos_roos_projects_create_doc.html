@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style/create_document.css">
+    <link rel="stylesheet" href="../../assets/style/log_table.css">
+    <link rel="stylesheet" href="../../assets/style/organization_structure.css">
+    <title>Проекты ОВОС/РООС и порядок их согласования - Создать документ</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <img src="../../assets/images/AGP-logoauthorization-form-logo.svg" alt="agp_logo" class="header__logo">
+        <div class="header__search-and-logout">
+            <input type="search" name="headerSearch" id="headerSearch" class="header__search-field">
+            <a href="../../user_info/hse_user_page.html"><img src="../../assets/images/header-user-icon.svg" alt="user-page"></a>
+            <a href="#"><img src="../../assets/images/header-logout.svg" alt="header-logout-icon" class="header__logout-icon"></a>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <a href="../../user_info/hse_home.html"><img src="../../assets/images/sidebar-user-info.svg" alt="user-info"></a>
+        <p class="sidebar__module-title">Инфо для пользователя</p>
+        <a href="#"><img src="../../assets/images/sidebar-reports.svg" alt="reports"></a>
+        <p class="sidebar__module-title">Отчеты</p>
+        <a href="#"><img src="../../assets/images/sidebar-labor-safety.svg" alt="labor-protection"></a>
+        <p class="sidebar__module-title">Охрана труда </p>
+        <a href="../../ecology/waste/folders.html"><img src="../../assets/images/sidebar-ecology.svg" alt="ecology"></a>
+        <p class="sidebar__module-title">Экология</p>
+    </aside>
+    <nav class="inner-nav">
+        <a href="../waste/folders.html" class="inner-nav__link">Отходы</a>
+        <a href="../plans/folders.html" class="inner-nav__link">Планы</a>
+        <a href="../emission_projects/folders.html" class="inner-nav__link">Проекты эмиссии</a>
+        <a href="./folders.html" class="inner-nav__link inner-nav__link_active">Проекты ОВОС</a>
+        <a href="../environmental_control_programs/environmental_control_programs(ppek)_doc_list.html" class="inner-nav__link">Программы производственного экологического контроля ОВОС</a>
+    </nav>
+    <!-- NAVIGATION -->
+    <div>.</div>
+    <div class="container">
+        <p class="create-doc__title">Создать документ</p>
+        <form action="#" class="create-doc__form">
+            <div class="create-doc__row">
+                <!-- FILE NAME -->
+                <div class="form__field">
+                    <div class="form__field-title">Имя файла</div>
+                    <input type="text" name="fileName" id="fileName" class="form__field-content">
+                </div>
+                <!-- DOCUMENT NAME -->
+                <div class="form__field">
+                    <div class="form__field-title">Наименование документа</div>
+                    <input type="text" name="docName" id="docName" class="form__field-content">
+                </div>
+            </div>
+            <div class="create-doc__row">
+                <!-- DATE OF DOCUMENT CREATION -->
+                <div class="form__field">
+                    <div class="form__field-title">Дата создания документа</div>
+                    <input type="date" name="protocolDate" id="protocolDate" class="form__field-content">
+                </div>
+                <!-- DATE OF DOCUMENT TRANSITION -->
+                <div class="form__field">
+                    <div class="form__field-title">Дата передачи документа</div>
+                    <input type="date" name="validity" id="validity" class="form__field-content">
+                </div>
+            </div>
+            <div class="create-doc__row">
+                <!-- SENDER -->
+                <div class="form__field">
+                    <div class="form__field-title">Отправитель</div>
+                    <input type="text" name="sender" id="sender" class="form__field-content form__field-show-modal"
+                        onclick="openModal(), findLocation(id)" autocomplete="off">
+                </div>
+                <!-- COORDINATING DEPARTMENT -->
+                <div class="form__field">
+                    <div class="form__field-title">Согласующий департамент</div>
+                    <select name="responsibleDepartment" id="responsibleDepartment" class="form__field-content">
+                        <option value="security-dep">Департамент безопасности</option>
+                        <option value="hr-dep">Департамент HR</option>
+                        <option value="iso-dep">Департамент ПБ, ОТ, Э и ИСО</option>
+                        <option value="inner-control-dep">Служба внутреннего контроля</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="create-doc__row">
+                <!-- ACTION -->
+                <div class="form__field">
+                    <div class="form__field-title">Действие</div>
+                    <select name="action" id="action" class="form__field-content">
+                        <option value="created">Создан</option>
+                        <option value="submitForReview"
+                        >Передать на ознакомление</option>
+                        <option value="submitForConsideration">Передать на рассмотрение</option>
+                        <option value="sendBackForRevision">Отправить на доработку</option>
+                        <option value="acceptDocument">Согласовать документ</option>
+                    </select>
+                </div>
+                <!-- EXECUTOR -->
+                <div class="form__field">
+                    <div class="form__field-title">Исполнитель</div>
+                    <input type="text" name="executor" id="executor" class="form__field-content form__field-show-modal"
+                        onclick="openModal(), findLocation(id)" autocomplete="off">
+                </div>
+            </div>
+            <!-- DOCUMENT UPLOADING -->
+            <div class="form__field">
+                <div class="form__field-title">Проектно-сметная документация (ПСД)</div>
+                <div class="create-doc__upload-file form__field-content form__field-content_long">
+                    <label for="uploadFileFirst" class="create-doc__label">
+                        <img src="../../assets/images/upload-icon.svg" alt="">
+                        <span>Нажмите или перетащите файл для загрузки</span>
+                    </label>
+                    <input type="file" name="uploadFileFirst" id="uploadFileFirst" class="input-hidden">
+                </div>
+            </div>
+            <!-- DOCUMENT UPLOADING -->
+            <div class="form__field">
+                <div class="form__field-title">ОВОС/РООС</div>
+                <div class="create-doc__upload-file form__field-content form__field-content_long">
+                    <label for="uploadFileSecond" class="create-doc__label">
+                        <img src="../../assets/images/upload-icon.svg" alt="">
+                        <span>Нажмите или перетащите файл для загрузки</span>
+                    </label>
+                    <input type="file" name="uploadFileSecond" id="uploadFileSecond" class="input-hidden">
+                </div>
+            </div>
+            <!-- COMMENT -->
+            <textarea name="comment" id="comment" class="form__comment form__field-content"
+                placeholder="Комментарий"></textarea>
+            <!-- ADDITION BUTTON -->
+            <div class="create-doc__buttons">
+                <a href="#"
+                    class="create-doc__cancel-button create-doc__button-text">Отменить</a>
+                <button type="submit" class="create-doc__button create-doc__button-text">Сохранить</button>
+            </div>
+        </form>
+        <!-- LOG TABLE -->
+        <table class="log-table">
+            <tr class="log-table__title">
+                <th>Дата / время передачи документа </th>
+                <th>Статус</th>
+                <th>Комментарий</th>
+                <th>Вложения</th>
+                <th>Отправитель</th>
+                <th>Согласующий департамент</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!-- SENDER AND EXECUTORE CHOOSING MODAL WINDOW -->
+    <div class="employee-list" id="employeeList">
+        <div class="org-structure-container">
+            <!-- DEPARTMENT LIST  -->
+            <div class="org-structure department-list">
+                <!-- SEARCH FIELD -->
+                <input type="search" name="depListSearch" placeholder="keywords" id="depListSearch"
+                class="department-list__search">
+                <details>
+                        <summary class="department-list__departments">ТОО "Азиатский Газопровод"</summary>
+                        <p class="department-list__departments">Генеральный директор</p>
+                        <p class="department-list__departments">Первый заместитель генерального директора</p>
+                        <p class="department-list__departments">Исполнительный директор по правовым вопросам</p>
+                        <details>
+                            <summary class="department-list__departments">Группа советников</summary>
+                        </details>
+                        <details>
+                            <summary class="department-list__departments">Департамент безопасности</summary>
+                        </details>
+                        <details>
+                            <summary class="department-list__departments">Департамент управления человеческими ресурсами</summary>
+                        </details>
+                        <details>
+                            <summary class="department-list__departments">Департамент ПБ, ОТ, Э и ИСО</summary>
+                        </details>
+                        <details>
+                            <summary class="department-list__departments">Служба внутреннего контроля</summary>
+                        </details>
+                        <details>
+                            <summary class="department-list__departments">Департамент правового обеспечения</summary>
+                        </details>
+                </details>
+            </div>
+            <!-- DEPARTMENT DETAILS -->
+            <div class="org-structure department-details modal-window">
+                <p class="department-details__department-name">Служба внутреннего контроля</p>
+                <div>
+                    <a href="#" class="department-details__employee" id="employee1" onclick="chooseSender(id)">
+                        <img src="../../assets/images/employee.svg" alt="employee-icon">
+                        <p>Stephanie Harrelson</p>
+                    </a>
+                    <a href="#" class="department-details__employee" id="employee2" onclick="chooseSender(id)">
+                        <img src="../../assets/images/employee.svg" alt="employee-icon">
+                        <p>John Smith</p>
+                    </a>
+                    <a href="#" class="department-details__employee" id="employee3" onclick="chooseSender(id)">
+                        <img src="../../assets/images/employee.svg" alt="employee-icon">
+                        <p>Cameron Jennings</p>
+                    </a>
+                    <a href="#" class="department-details__employee" id="employee4" onclick="chooseSender(id)">
+                        <img src="../../assets/images/employee.svg" alt="employee-icon">
+                        <p>Rosemary Bramson</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/scripts/modal.js"></script>
+</body>
