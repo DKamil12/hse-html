@@ -38,7 +38,7 @@
     <div>.</div>
     <div class="container">
         <p class="create-doc__title">Просмотр документа</p>
-        <form action="./ndc_environmental_impact_permissions_edit_doc.html">
+        <form action="./ndc_environmental_impact_permissions_edit_doc.html" class="create-doc__form">
             <div class="create-doc__row">
                 <!-- FILE NAME -->
                 <div class="form__field">
@@ -55,8 +55,8 @@
                 <!-- DATE OF APPROVAL -->
                 <div class="form__field">
                     <div class="form__field-title">Номер и дата утверждения файла</div>
-                        <input type="text" name="protocolNumber" id="protocolNumber" class="form__field-content form__field-content_protocol-number" value="0001" readonly>
-                    <input type="date" name="protocolDate" id="protocolDate" class="form__field-content form__field-content_protocol-date" value="2022-06-21" readonly>
+                        <input type="text" name="protocolNumber" id="protocolNumber" class="form__field-content form__field-content_protocol-number" readonly>
+                        <input type="date" name="protocolDate" id="protocolDate" class="form__field-content form__field-content_protocol-date" readonly>
                 </div>
                 <!-- VALIDITY -->
                 <div class="form__field">
@@ -69,14 +69,14 @@
                 <!-- EXECUTIVE ORGANIZATION -->
                 <div class="form__field">
                     <div class="form__field-title">Исполнительная организация</div>
-                    <input type="text" name="executiveOrganization" id="executiveOrganization" class="form__field-content form__field-content_long">
+                    <input type="text" name="executiveOrganization" id="executiveOrganization" class="form__field-content form__field-content_long" readonly>
                 </div>
             </div>
             <div class="create-doc__row">
                 <!-- PERMISSION DOCUMENT NUMBER -->
                 <div class="form__field">
                     <div class="form__field-title">Номер документа разрешения</div>
-                    <input type="text" name="documentNumber" id="documentNumber" class="form__field-content">
+                    <input type="text" name="documentNumber" id="documentNumber" class="form__field-content" readonly>
                 </div>
                 <!-- ISSUING AUTHORITY -->
                 <div class="form__field">
@@ -96,12 +96,12 @@
                 <!-- PERMISSION DATE -->
                 <div class="form__field">
                     <div class="form__field-title">Дата выдачи разрешения</div>
-                    <input type="date" name="conclusionDate" id="conclusionDate" class="form__field-content">
+                    <input type="date" name="conclusionDate" id="conclusionDate" class="form__field-content" readonly>
                 </div>
                 <!-- EMISSION STANDARTS -->
                 <div class="form__field">
                     <div class="form__field-title">Нормативы сбросов</div>
-                <input type="text" name="emissionStandarts" id="emissionStandarts" class="form__field-content">
+                <input type="text" name="emissionStandarts" id="emissionStandarts" class="form__field-content" readonly>
                 </div>
             </div>
             <!-- DOCUMENT UPLOADING -->
